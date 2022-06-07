@@ -15,7 +15,7 @@ public class GuessingGame : MonoBehaviour
     }
     void Update()
     {
-        if (!oyunBasladiMi)
+        if (oyunBasladiMi==false)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -32,7 +32,7 @@ public class GuessingGame : MonoBehaviour
                 oyunBasladiMi = true;
             }
         }
-        else if (!oyunBittiMi)
+        else if (oyunBittiMi==false)
         {
 
             if (Input.GetKeyDown(KeyCode.UpArrow))
