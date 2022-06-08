@@ -1,24 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;//kütüphane eklemek gerekiyor başlatmak için.
 
 public class Buton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void YenidenBasla()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("SampleScene");//butona basında samplescene sahnesi en baştan başlatmak için
     }
 }
