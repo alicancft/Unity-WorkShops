@@ -19,7 +19,7 @@ public class OyuncuKontro : MonoBehaviour
             transform.Translate(x, 0f, y);
         }
     }
-
+    
     void OnCollisionEnter(Collision c)
     {
         if (c.gameObject.tag.Equals("altin"))
@@ -28,6 +28,10 @@ public class OyuncuKontro : MonoBehaviour
             Destroy(c.gameObject);
         }
         else if (c.gameObject.tag.Equals("dusman"))
+        {
+            oyunK.oyunAktif = false;
+        }
+        else if (c.gameObject.CompareTag("Finish") && oyunK.altinSayisi==3)
         {
             oyunK.oyunAktif = false;
         }

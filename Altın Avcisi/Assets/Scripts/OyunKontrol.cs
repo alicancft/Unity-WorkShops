@@ -8,7 +8,7 @@ public class OyunKontrol : MonoBehaviour
     public TextMeshProUGUI altinSayisiText;
     public bool oyunAktif = true;
 
-    public int altinSayisi = 0;
+    public int altinSayisi;
 
     public void AltinArttir()
     {
