@@ -17,6 +17,12 @@ public class OyuncuKontro : MonoBehaviour
             x *= Time.deltaTime * hiz;
             y *= Time.deltaTime * hiz;
             transform.Translate(x, 0f, y);
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Vector3 jumpOffSet = new Vector3(0, transform.position.y+3f, 0);
+                gameObject.GetComponent<Rigidbody>().AddForce(jumpOffSet);
+            }
         }
     }
     

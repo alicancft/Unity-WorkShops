@@ -6,6 +6,7 @@ TagManager:
   tags:
   - altin
   - dusman
+  - zemin
   layers:
   - Default
   - TransparentFX

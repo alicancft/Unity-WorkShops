@@ -5,7 +5,7 @@ using UnityEngine;
 public class KameraKontrol : MonoBehaviour
 {
     public OyunKontrol oyunK;
-    float hassasiyet = 5f;
+    float hassasiyet = 2f;
     float yumusaklik = 2f;
     Vector2 gecisPos;
     Vector2 camPos;
